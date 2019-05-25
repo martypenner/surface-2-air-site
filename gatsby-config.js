@@ -1,19 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    title: `Surface 2 Air Official`,
+    author: `Marty Penner`,
+    description: `The official website of Surface 2 Air, an alternative metal band from Aylmer, Ontario.`,
+    siteUrl: `https://surface2air.band`,
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/site`,
+        name: `site`,
       },
     },
     {
@@ -50,15 +47,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-26861011-1`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Surface 2 Air Official`,
+        short_name: `Surface 2 Air`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
