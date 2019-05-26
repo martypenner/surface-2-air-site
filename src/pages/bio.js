@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 const Bio = () => {
   return (
-    <Layout>
+    <Layout title="Bio">
       <p>
         <span>
           A mixture of emo-metal and hard rock is probably not what you'd expect

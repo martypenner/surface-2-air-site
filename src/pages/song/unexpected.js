@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const Unexpected = () => {
   return (
-    <Layout>
+    <Layout title="Unexpected">
       <h3>
         <strong>Unexpected</strong>
       </h3>

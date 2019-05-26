@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const ByFire = () => {
   return (
-    <Layout>
+    <Layout title="By Fire">
       <h3>
         <strong>By Fire</strong>
       </h3>

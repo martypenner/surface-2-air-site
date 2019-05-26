@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
-import victoryForTheDyingSrc from "./victory for the dying.jpg"
-import epSrc from "./s2a ep.jpg"
 import incomingSrc from "./incoming.jpg"
+import epSrc from "./s2a ep.jpg"
+import victoryForTheDyingSrc from "./victory for the dying.jpg"
 
 const Music = () => {
   return (
-    <Layout>
+    <Layout title="Music">
       <div className="album-list">
         <div className="album">
           <h3>Victory For The Dying</h3>

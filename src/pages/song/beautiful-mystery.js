@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const BeautifulMystery = () => {
   return (
-    <Layout>
+    <Layout title="Beautiful Mystery">
       <h3>
         <strong>Beautiful Mystery</strong>
       </h3>

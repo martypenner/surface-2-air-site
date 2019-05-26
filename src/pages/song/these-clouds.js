@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const TheseClouds = () => {
   return (
-    <Layout>
+    <Layout title="These Clouds">
       <h3>
         <strong>These Clouds</strong>
       </h3>

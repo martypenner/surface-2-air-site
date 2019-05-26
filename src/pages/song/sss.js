@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const SSS = () => {
   return (
-    <Layout>
+    <Layout title="SSS">
       <h3>
         <strong>SSS</strong>
       </h3>

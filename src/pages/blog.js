@@ -3,14 +3,14 @@ import Layout from "../components/layout"
 
 const Blog = () => {
   return (
-    <Layout>
+    <Layout title="Blog">
       <h3>Very Much Alive</h3>
       <h4>
-        <span class="blog-date">January 8, 2011</span> - jguenther
+        <span className="blog-date">January 8, 2011</span> - jguenther
       </h4>
 
-      <div class="blog-article">
-        <p class="MsoNormal">
+      <div className="blog-article">
+        <p className="MsoNormal">
           I have been asked enough times regarding the progress on our next
           collection of songs to warrant the drafting of an update (at the very
           least). But I hope to do you one better and provide you with not only
@@ -19,8 +19,8 @@ const Blog = () => {
           things I will put to this page, however unfortunate, but I do feel it
           worth the effort.
         </p>
-        <p class="MsoNormal">&nbsp;</p>
-        <p class="MsoNormal">
+        <p className="MsoNormal">&nbsp;</p>
+        <p className="MsoNormal">
           For starters Surface 2 Air is very much alive. We are in fact more
           alive and vibrant than ever. We have all passed our adolescents and
           moved into a very stable understanding of just what we hope to
@@ -33,8 +33,8 @@ const Blog = () => {
           thing… is the greatest part of our transformation and on this one
           thing all others pivot and as such, all things will pass through it.
         </p>
-        <p class="MsoNormal">&nbsp;</p>
-        <p class="MsoNormal">
+        <p className="MsoNormal">&nbsp;</p>
+        <p className="MsoNormal">
           The excitement we feel about the new sounds we are making is palpable.
           We have never pushed ourselves further and tested our skills more than
           now. We are literally writing beyond our ability. By that I mean we
@@ -48,8 +48,8 @@ const Blog = () => {
           it is choosing us. Either way it is a very natural and organic
           evolution.
         </p>
-        <p class="MsoNormal">&nbsp;</p>
-        <p class="MsoNormal">
+        <p className="MsoNormal">&nbsp;</p>
+        <p className="MsoNormal">
           Our approach to our lyrics is equally exciting. We are drawing as
           always from our lives and experiences but now very unapologetic. We
           are focused on providing an extremely honest journey and are now
@@ -64,17 +64,17 @@ const Blog = () => {
           not designed to do that. We are focused only on the telling, the
           feeling on the other hand may come as a result.
         </p>
-        <p class="MsoNormal">&nbsp;</p>
-        <p class="MsoNormal">
+        <p className="MsoNormal">&nbsp;</p>
+        <p className="MsoNormal">
           I would urge you all to keep us in your thoughts. This process may be
           taking longer than expected but I do think it is worth it. I hope this
           has excited you and that you are looking forward to hearing the
           finished product. Just be patient, because I think you all will like
           what comes out in the end.
         </p>
-        <p class="MsoNormal">&nbsp;</p>
-        <p class="MsoNormal">Johnny Guenther</p>
-        <p class="MsoNormal">Surface 2 Air</p>
+        <p className="MsoNormal">&nbsp;</p>
+        <p className="MsoNormal">Johnny Guenther</p>
+        <p className="MsoNormal">Surface 2 Air</p>
       </div>
     </Layout>
   )

@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const Downtime = () => {
   return (
-    <Layout>
+    <Layout title="Downtime">
       <h3>
         <strong>Downtime</strong>
       </h3>

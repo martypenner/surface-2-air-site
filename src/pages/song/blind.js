@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const Blind = () => {
   return (
-    <Layout>
+    <Layout title="Blind">
       <h3>
         <strong>Blind</strong>
       </h3>

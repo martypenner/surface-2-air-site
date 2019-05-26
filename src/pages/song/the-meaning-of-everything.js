@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const TheMeaningOfEverything = () => {
   return (
-    <Layout>
+    <Layout title="The Meaning of Everything">
       <h3>
         <strong>The Meaning Of Everything</strong>
       </h3>

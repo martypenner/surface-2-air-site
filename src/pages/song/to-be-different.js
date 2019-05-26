@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const ToBeDifferent = () => {
   return (
-    <Layout>
+    <Layout title="To Be Different">
       <h3>
         <strong>To Be Different</strong>
       </h3>

@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const InsideOut = () => {
   return (
-    <Layout>
+    <Layout title="Inside Out">
       <h3>
         <strong>Inside Out</strong>
       </h3>

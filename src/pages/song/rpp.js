@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const RPP = () => {
   return (
-    <Layout>
+    <Layout title="RPP">
       <h3>
         <strong>RPP</strong>
       </h3>

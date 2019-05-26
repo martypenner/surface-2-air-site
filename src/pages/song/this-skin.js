@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const ThisSkin = () => {
   return (
-    <Layout>
+    <Layout title="This Skin">
       <h3>
         <strong>This Skin</strong>
       </h3>

@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 class SiteIndex extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout title="News">
         <div className="view view-news view-id-news view-display-id-page_1 view-dom-id-1">
           <div className="view-content">
             <div className="views-row views-row-1 views-row-odd views-row-first">
@@ -114,18 +114,18 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-              <div class="views-field-title">
-                <span class="field-content">FIRST SHOW OF THE YEAR!</span>
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first">
+              <div className="views-field-title">
+                <span className="field-content">FIRST SHOW OF THE YEAR!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">February 21, 2013</span>
+              <div className="views-field-created">
+                <span className="field-content">February 21, 2013</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     I know it will be 3 months in, but none the less, we'll be
                     playing in Tillsonburg at the Carriage House on March 2nd.
@@ -137,17 +137,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-2 views-row-even">
-              <div class="views-field-title">
-                <span class="field-content">THANKS TO THE FANS!</span>
+            <div className="views-row views-row-2 views-row-even">
+              <div className="views-field-title">
+                <span className="field-content">THANKS TO THE FANS!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">November 10, 2012</span>
+              <div className="views-field-created">
+                <span className="field-content">November 10, 2012</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     <span>Hey guys.</span>
                     <br />
@@ -172,17 +172,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-3 views-row-odd views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">2005 EP NOW AVAILABLE!</span>
+            <div className="views-row views-row-3 views-row-odd views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">2005 EP NOW AVAILABLE!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">October 22, 2012</span>
+              <div className="views-field-created">
+                <span className="field-content">October 22, 2012</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>Hey, hey.</p>
                   <p>
                     As promised, our self-titled EP from 2005 is now available
@@ -202,32 +202,32 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-              <div class="views-field-title">
-                <span class="field-content">
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first">
+              <div className="views-field-title">
+                <span className="field-content">
                   2005 SELF-TITLED EP AVAILABLE FOR DOWNLOAD SOON!
                 </span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">September 12, 2012</span>
+              <div className="views-field-created">
+                <span className="field-content">September 12, 2012</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
-                    <span class="fwn fcg" />
+                    <span className="fwn fcg" />
                   </p>
-                  <div class="storyInnerContent storyContent">
-                    <div class="mainWrapper">
-                      <h6 class="uiStreamMessage userContentWrapper">
+                  <div className="storyInnerContent storyContent">
+                    <div className="mainWrapper">
+                      <h6 className="uiStreamMessage userContentWrapper">
                         <span style={{ fontSize: "small" }}>
-                          <span class="messageBody">
+                          <span className="messageBody">
                             <span style={{ fontWeight: "normal" }}> </span>
                             <div>
                               <span
-                                class="userContent"
+                                className="userContent"
                                 style={{ fontWeight: "normal" }}
                               >
                                 Good day folks.
@@ -260,17 +260,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-2 views-row-even">
-              <div class="views-field-title">
-                <span class="field-content">STAG 'N' DOE SHOW!</span>
+            <div className="views-row views-row-2 views-row-even">
+              <div className="views-field-title">
+                <span className="field-content">STAG 'N' DOE SHOW!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">August 4, 2012</span>
+              <div className="views-field-created">
+                <span className="field-content">August 4, 2012</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Hey guys, this is extremely short notice but, we are playing
                     at my precious little brother's stan n doe.
@@ -284,19 +284,19 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-3 views-row-odd views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">
+            <div className="views-row views-row-3 views-row-odd views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">
                   S2A WITH THE MUDMEN AND HEADS UNWORTHY
                 </span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">March 16, 2012</span>
+              <div className="views-field-created">
+                <span className="field-content">March 16, 2012</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>Hey guys.</p>
                   <p>
                     We just wanted to give you guys a heads up about a CD
@@ -311,18 +311,18 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-              <div class="views-field-title">
-                <span class="field-content">WE'RE BACK!</span>
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first">
+              <div className="views-field-title">
+                <span className="field-content">WE'RE BACK!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">January 19, 2012</span>
+              <div className="views-field-created">
+                <span className="field-content">January 19, 2012</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     After a painfully long time, we've managed to snag back
                     s2a.ca! That's the last time we'll screw something like that
@@ -344,17 +344,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-2 views-row-even">
-              <div class="views-field-title">
-                <span class="field-content">S2A AT DELHI HARVEST FEST</span>
+            <div className="views-row views-row-2 views-row-even">
+              <div className="views-field-title">
+                <span className="field-content">S2A AT DELHI HARVEST FEST</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">August 27, 2011</span>
+              <div className="views-field-created">
+                <span className="field-content">August 27, 2011</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Apparently it's true.&nbsp; After taking more than a year
                     off to focus on writing, we have agreed to help out a good
@@ -380,17 +380,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-3 views-row-odd views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">JUNE 3 SHOW CANCELLATION</span>
+            <div className="views-row views-row-3 views-row-odd views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">JUNE 3 SHOW CANCELLATION</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">May 16, 2011</span>
+              <div className="views-field-created">
+                <span className="field-content">May 16, 2011</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Well, bad news: the June 3 show has been canceled. Sorry :(
                     . We'll keep trying for a show in the area soon.
@@ -400,18 +400,18 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-              <div class="views-field-title">
-                <span class="field-content">JUNE 3 SHOW IN THE WORKS</span>
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first">
+              <div className="views-field-title">
+                <span className="field-content">JUNE 3 SHOW IN THE WORKS</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">April 8, 2011</span>
+              <div className="views-field-created">
+                <span className="field-content">April 8, 2011</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Hey folks, as promised, here is another rare update from the
                     band. We've got a show in the works for June 3 in
@@ -422,17 +422,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-2 views-row-even">
-              <div class="views-field-title">
-                <span class="field-content">HAPPY NEW YEAR!</span>
+            <div className="views-row views-row-2 views-row-even">
+              <div className="views-field-title">
+                <span className="field-content">HAPPY NEW YEAR!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">January 7, 2011</span>
+              <div className="views-field-created">
+                <span className="field-content">January 7, 2011</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Hey all! It's been a VERY long time, and we've been busy. A
                     few changes have been made to the site. You can now check
@@ -457,17 +457,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-3 views-row-odd views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">A NIGHT TO REMEMBER</span>
+            <div className="views-row views-row-3 views-row-odd views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">A NIGHT TO REMEMBER</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">January 11, 2010</span>
+              <div className="views-field-created">
+                <span className="field-content">January 11, 2010</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     A big, fat thank you to everyone who showed up at Norma
                     Jeans (Tillsonburg) on Jan. 8th.
@@ -504,18 +504,20 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-              <div class="views-field-title">
-                <span class="field-content">THE HIDEAWAY SHOW CANCELED!!</span>
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first">
+              <div className="views-field-title">
+                <span className="field-content">
+                  THE HIDEAWAY SHOW CANCELED!!
+                </span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">November 25, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">November 25, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Sorry folks :( but the show for this saturday at the
                     HideAway has been canceled.
@@ -524,17 +526,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-2 views-row-even">
-              <div class="views-field-title">
-                <span class="field-content">JUST CHECKIN IN!</span>
+            <div className="views-row views-row-2 views-row-even">
+              <div className="views-field-title">
+                <span className="field-content">JUST CHECKIN IN!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">September 14, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">September 14, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Just given you guys heads up on the show in October (check
                     shows for details).
@@ -557,17 +559,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-3 views-row-odd views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">ALBERTA SHOW CANCELED!</span>
+            <div className="views-row views-row-3 views-row-odd views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">ALBERTA SHOW CANCELED!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">August 4, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">August 4, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Due to some planning complications, the Alberta trip will
                     not happen this year.
@@ -587,18 +589,20 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-              <div class="views-field-title">
-                <span class="field-content">COUNTRY CAMPING SHOW CANCELED</span>
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first">
+              <div className="views-field-title">
+                <span className="field-content">
+                  COUNTRY CAMPING SHOW CANCELED
+                </span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">July 13, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">July 13, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>Hey guys.&nbsp; Some sad news.....</p>
                   <p>
                     We will not be playing at Country Camping this year due to
@@ -620,32 +624,32 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-2 views-row-even">
-              <div class="views-field-title">
-                <span class="field-content">ALBERTA?!</span>
+            <div className="views-row views-row-2 views-row-even">
+              <div className="views-field-title">
+                <span className="field-content">ALBERTA?!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">July 10, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">July 10, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
-                  <div id="pBlogBody_499518403" class="blogContent">
+              <div className="views-field-body">
+                <div className="field-content">
+                  <div id="pBlogBody_499518403" className="blogContent">
                     <span>
                       We regret to inform ya'll that we will not be attending
                       the Tillsonburg Fair show this year on August 15th
                       because...................
                     </span>
                     ..
-                    <span class="word_break" />
+                    <span className="word_break" />
                     ..................
                   </div>
-                  <div class="blogContent">
+                  <div className="blogContent">
                     <br />
                   </div>
-                  <div id="pBlogBody_499518403" class="blogContent">
-                    <div class="s_message_content clearfix">
+                  <div id="pBlogBody_499518403" className="blogContent">
+                    <div className="s_message_content clearfix">
                       <strong>WE ARE DOING A SHOW IN ALBERTA!</strong> Well we
                       are working out all the details anyway and hope that
                       everything works out. We are looking at August 14th and
@@ -654,10 +658,10 @@ class SiteIndex extends React.Component {
                       Saskatchewan or Manitoba and you want us to come to your
                       town, hook us up!!
                     </div>
-                    <div class="s_message_content clearfix">
+                    <div className="s_message_content clearfix">
                       <br />
                     </div>
-                    <div class="s_message_content clearfix">
+                    <div className="s_message_content clearfix">
                       Peace!
                       <br />
                     </div>
@@ -665,17 +669,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-3 views-row-odd views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">NEW MERCH!!</span>
+            <div className="views-row views-row-3 views-row-odd views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">NEW MERCH!!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">July 10, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">July 10, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Alright!!
                     <br />
@@ -708,18 +712,18 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-              <div class="views-field-title">
-                <span class="field-content">MERCH!!</span>
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first">
+              <div className="views-field-title">
+                <span className="field-content">MERCH!!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">June 26, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">June 26, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>Yo yo!</p>
                   <p>Just giving you guys a heads up!</p>
                   <p>&nbsp;</p>
@@ -738,19 +742,19 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-2 views-row-even">
-              <div class="views-field-title">
-                <span class="field-content">
+            <div className="views-row views-row-2 views-row-even">
+              <div className="views-field-title">
+                <span className="field-content">
                   LOCATION CHANGE FOR JUNE 20 SHOW
                 </span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">June 8, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">June 8, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Hey folks, looks like the tillsonburg june 20 show at the
                     Upper Deck is being moved another location. The new address
@@ -760,17 +764,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-3 views-row-odd views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">SHOW UPDATE</span>
+            <div className="views-row views-row-3 views-row-odd views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">SHOW UPDATE</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">May 30, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">May 30, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Hey folks, for those of you interested in tomorrow's (May
                     30) PWX Wrestling League Fundraiser, Nerve will be opening
@@ -784,18 +788,18 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-              <div class="views-field-title">
-                <span class="field-content">STILL KICKIN!</span>
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first">
+              <div className="views-field-title">
+                <span className="field-content">STILL KICKIN!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">May 22, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">May 22, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>Hey guys!</p>
                   <p>
                     Just wanted to give you a heads up on some of the shows we
@@ -812,17 +816,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-2 views-row-even">
-              <div class="views-field-title">
-                <span class="field-content">SHOW UPDATES</span>
+            <div className="views-row views-row-2 views-row-even">
+              <div className="views-field-title">
+                <span className="field-content">SHOW UPDATES</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">April 2, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">April 2, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Just checkin in on y'all and lettin you know we got some
                     shows coming up...
@@ -841,17 +845,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-3 views-row-odd views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">THE LAST EMBASSY SHOW!</span>
+            <div className="views-row views-row-3 views-row-odd views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">THE LAST EMBASSY SHOW!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">February 7, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">February 7, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>That's right!</p>
                   <p>
                     Apperently, the city of London wants to tear down the
@@ -874,18 +878,18 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-              <div class="views-field-title">
-                <span class="field-content">BABY'S HERE!</span>
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first">
+              <div className="views-field-title">
+                <span className="field-content">BABY'S HERE!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">January 17, 2009</span>
+              <div className="views-field-created">
+                <span className="field-content">January 17, 2009</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   <p>
                     Hey everyone!&nbsp; S2A has got a new screamer!!
                     <br />
@@ -908,17 +912,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-2 views-row-even">
-              <div class="views-field-title">
-                <span class="field-content">TAKING A BREAK</span>
+            <div className="views-row views-row-2 views-row-even">
+              <div className="views-field-title">
+                <span className="field-content">TAKING A BREAK</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">December 28, 2008</span>
+              <div className="views-field-created">
+                <span className="field-content">December 28, 2008</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   Hey folks, many changes have occurred over the past few
                   months, so we thought it a great time to update you on this
                   site about what's been going on :).
@@ -955,19 +959,19 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-3 views-row-odd views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">
+            <div className="views-row views-row-3 views-row-odd views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">
                   NOT PERFORMING AT NORWICH SHOW
                 </span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">July 3, 2008</span>
+              <div className="views-field-created">
+                <span className="field-content">July 3, 2008</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   Well, after a long "break" from updates (at least on this
                   site), we've got some bad news: Surface 2 Air will not be
                   performing at the July 5 Norwich show in Dillon Park due to
@@ -985,20 +989,20 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first">
-              <div class="views-field-title">
-                <span class="field-content">
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first">
+              <div className="views-field-title">
+                <span className="field-content">
                   GOING DIGITAL, AND CHATHAM/WINDSOR 95.1FM/100.7FM
                 </span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">March 5, 2008</span>
+              <div className="views-field-created">
+                <span className="field-content">March 5, 2008</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   Well, we've got some more great news! Our album will soon be
                   available for download from numerous online music services, so
                   keep your eyes open! More to come soon.
@@ -1016,17 +1020,19 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-2 views-row-even">
-              <div class="views-field-title">
-                <span class="field-content">MERCH, MUSIC VIDEO, AND FM96!</span>
+            <div className="views-row views-row-2 views-row-even">
+              <div className="views-field-title">
+                <span className="field-content">
+                  MERCH, MUSIC VIDEO, AND FM96!
+                </span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">February 27, 2008</span>
+              <div className="views-field-created">
+                <span className="field-content">February 27, 2008</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   Hey folks, got some new happenings in the works. We've finally
                   got some of our new merch in, and this time we got hoodies!!
                   Pics coming soon.
@@ -1048,17 +1054,17 @@ class SiteIndex extends React.Component {
                 </div>
               </div>
             </div>
-            <div class="views-row views-row-3 views-row-odd views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">CD OFFICIALLY RELEASED!</span>
+            <div className="views-row views-row-3 views-row-odd views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">CD OFFICIALLY RELEASED!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">February 3, 2008</span>
+              <div className="views-field-created">
+                <span className="field-content">February 3, 2008</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   Thanks to everyone who came out last night! It was a wicked
                   show with a buzz
                   <br />
@@ -1077,18 +1083,18 @@ class SiteIndex extends React.Component {
             </div>
           </div>
 
-          <div class="view-content">
-            <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-              <div class="views-field-title">
-                <span class="field-content">WELCOME BACK!</span>
+          <div className="view-content">
+            <div className="views-row views-row-1 views-row-odd views-row-first views-row-last">
+              <div className="views-field-title">
+                <span className="field-content">WELCOME BACK!</span>
               </div>
 
-              <div class="views-field-created">
-                <span class="field-content">February 2, 2008</span>
+              <div className="views-field-created">
+                <span className="field-content">February 2, 2008</span>
               </div>
 
-              <div class="views-field-body">
-                <div class="field-content">
+              <div className="views-field-body">
+                <div className="field-content">
                   Hey people, we’re back! Welcome back to the official Surface 2
                   Air website where you can get your daily fix of news, music,
                   photos and more. As you can see, we're still under

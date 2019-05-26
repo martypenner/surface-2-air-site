@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 const Shows = () => {
   return (
-    <Layout>
+    <Layout title="Shows">
       <h2>No current upcoming shows</h2>
     </Layout>
   )

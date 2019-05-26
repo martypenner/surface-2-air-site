@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const Broken = () => {
   return (
-    <Layout>
+    <Layout title="Broken">
       <h3>
         <strong>Broken</strong>
       </h3>

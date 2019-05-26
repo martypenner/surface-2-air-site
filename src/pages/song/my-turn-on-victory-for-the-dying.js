@@ -3,7 +3,7 @@ import Layout from "../../components/layout"
 
 const MyTurn = () => {
   return (
-    <Layout>
+    <Layout title="My Turn">
       <h3>
         <strong>My Turn</strong>
       </h3>
