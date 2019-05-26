@@ -20,7 +20,7 @@ const Music = () => {
           <ul className="song-list">
             <li>
               <strong>
-                <a href="/song/behind-lie">Behind the Lie</a>
+                <a href="/song/behind-the-lie">Behind the Lie</a>
               </strong>
             </li>
             <li>
@@ -35,7 +35,7 @@ const Music = () => {
             </li>
             <li>
               <strong>
-                <a href="/song/skin">This Skin</a>
+                <a href="/song/this-skin">This Skin</a>
               </strong>
             </li>
             <li>
@@ -50,7 +50,9 @@ const Music = () => {
             </li>
             <li>
               <strong>
-                <a href="/song/sick-saying-goodbye">Sick of Saying Goodbye</a>
+                <a href="/song/sick-of-saying-goodbye">
+                  Sick of Saying Goodbye
+                </a>
               </strong>
             </li>
           </ul>
@@ -67,7 +69,7 @@ const Music = () => {
           <ul className="song-list">
             <li>
               <strong>
-                <a href="/song/fire">By Fire</a>
+                <a href="/song/by-fire">By Fire</a>
               </strong>
             </li>
             <li>
@@ -77,7 +79,7 @@ const Music = () => {
             </li>
             <li>
               <strong>
-                <a href="/song/hate-song">The Hate Song</a>
+                <a href="/song/the-hate-song">The Hate Song</a>
               </strong>
             </li>
             <li>
@@ -114,12 +116,14 @@ const Music = () => {
             </li>
             <li>
               <strong>
-                <a href="/song/meaning-everything">The Meaning Of Everything</a>
+                <a href="/song/the-meaning-of-everything">
+                  The Meaning Of Everything
+                </a>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/be-different">To Be Different</a>
+                <a href="/song/to-be-different">To Be Different</a>
               </strong>
             </li>
             <li>
@@ -129,7 +133,7 @@ const Music = () => {
             </li>
             <li>
               <strong>
-                <a href="/song/time-you">Time With You</a>
+                <a href="/song/time-with-you">Time With You</a>
               </strong>
             </li>
             <li>
