@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 import incomingSrc from "./incoming.jpg"
@@ -20,39 +21,39 @@ const Music = () => {
           <ul className="song-list">
             <li>
               <strong>
-                <a href="/song/behind-the-lie">Behind the Lie</a>
+                <Link to="/song/behind-the-lie">Behind the Lie</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/broken">Broken</a>
+                <Link to="/song/broken">Broken</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/inside-out">Inside Out</a>
+                <Link to="/song/inside-out">Inside Out</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/this-skin">This Skin</a>
+                <Link to="/song/this-skin">This Skin</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/my-turn-on-victory-for-the-dying">My Turn</a>
+                <Link to="/song/my-turn-on-victory-for-the-dying">My Turn</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/tired">Tired</a>
+                <Link to="/song/tired">Tired</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/sick-of-saying-goodbye">
+                <Link to="/song/sick-of-saying-goodbye">
                   Sick of Saying Goodbye
-                </a>
+                </Link>
               </strong>
             </li>
           </ul>
@@ -69,32 +70,32 @@ const Music = () => {
           <ul className="song-list">
             <li>
               <strong>
-                <a href="/song/by-fire">By Fire</a>
+                <Link to="/song/by-fire">By Fire</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/unexpected">Unexpected</a>
+                <Link to="/song/unexpected">Unexpected</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/the-hate-song">The Hate Song</a>
+                <Link to="/song/the-hate-song">The Hate Song</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/family-life">Family Life</a>
+                <Link to="/song/family-life">Family Life</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/who-we-are">Who We Are</a>
+                <Link to="/song/who-we-are">Who We Are</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/downtime">Downtime</a>
+                <Link to="/song/downtime">Downtime</Link>
               </strong>
             </li>
           </ul>
@@ -111,64 +112,64 @@ const Music = () => {
           <ul className="song-list">
             <li>
               <strong>
-                <a href="/song/waiting-room">Waiting Room</a>
+                <Link to="/song/waiting-room">Waiting Room</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/the-meaning-of-everything">
+                <Link to="/song/the-meaning-of-everything">
                   The Meaning Of Everything
-                </a>
+                </Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/to-be-different">To Be Different</a>
+                <Link to="/song/to-be-different">To Be Different</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/sss">SSS</a>
+                <Link to="/song/sss">SSS</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/time-with-you">Time With You</a>
+                <Link to="/song/time-with-you">Time With You</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/blind">Blind</a>
+                <Link to="/song/blind">Blind</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/my-turn">My Turn</a>
+                <Link to="/song/my-turn">My Turn</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/rpp">RPP</a>
+                <Link to="/song/rpp">RPP</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/these-clouds">These Clouds</a>
+                <Link to="/song/these-clouds">These Clouds</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/beautiful-mystery">Beautiful Mystery</a>
+                <Link to="/song/beautiful-mystery">Beautiful Mystery</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/my-superman">My Superman</a>
+                <Link to="/song/my-superman">My Superman</Link>
               </strong>
             </li>
             <li>
               <strong>
-                <a href="/song/dream">Dream</a>
+                <Link to="/song/dream">Dream</Link>
               </strong>
             </li>
           </ul>

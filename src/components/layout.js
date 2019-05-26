@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import SEO from "./seo"
@@ -28,22 +29,22 @@ const Layout = ({ children, title }) => {
           <div id="menu">
             <ul>
               <li>
-                <a id="home" href="/" />
+                <Link id="home" to="/" />
               </li>
               <li>
-                <a id="blog" href="/blog" />
+                <Link id="blog" to="/blog" />
               </li>
               <li>
-                <a id="shows" href="/shows" />
+                <Link id="shows" to="/shows" />
               </li>
               <li>
-                <a id="bio" href="/bio" />
+                <Link id="bio" to="/bio" />
               </li>
               <li>
-                <a id="music" href="/music" />
+                <Link id="music" to="/music" />
               </li>
               <li>
-                <a id="contact" href="/contact-us" />
+                <Link id="contact" to="/contact-us" />
               </li>
             </ul>
           </div>

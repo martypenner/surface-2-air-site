@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/layout"
 
@@ -362,6 +363,7 @@ class SiteIndex extends React.Component {
                     <a
                       href="http://www.facebook.com/groups/15151123231/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Kronik Noise
                     </a>{" "}
@@ -374,8 +376,7 @@ class SiteIndex extends React.Component {
                     for yourselves.&nbsp; See you on the 17th!
                   </p>
                   <p>
-                    Visit <a href="http://s2a.ca/shows">Shows</a> for more
-                    details.
+                    Visit <Link to="/shows">Shows</Link> for more details.
                   </p>
                 </div>
               </div>
@@ -686,9 +687,9 @@ class SiteIndex extends React.Component {
                     New shirts are in!&nbsp; It's a white shirt this time with a
                     bleeding heart on it (check{" "}
                     <a
-                      href="http://www.facebook.com/group.php?gid=2261736061"
+                      href="https://www.facebook.com/surface2airband/"
                       target="_blank"
-                      title="S2A Facebook Profile"
+                      rel="noopener noreferrer"
                     >
                       facebook profile
                     </a>{" "}
@@ -947,12 +948,17 @@ class SiteIndex extends React.Component {
                   check out our{" "}
                   <a
                     target="_blank"
-                    href="http://www.facebook.com/group.php?gid=2261736061"
+                    href="https://www.facebook.com/surface2airband/"
+                    rel="noopener noreferrer"
                   >
                     facebook
                   </a>{" "}
                   and{" "}
-                  <a target="_blank" href="http://www.myspace.com/surface2air">
+                  <a
+                    target="_blank"
+                    href="http://www.myspace.com/surface2air"
+                    rel="noopener noreferrer"
+                  >
                     myspace
                   </a>{" "}
                   pages for music and news. Peace out.
@@ -1106,7 +1112,7 @@ class SiteIndex extends React.Component {
                   <br />
                   <br />
                   We'll be selling them at tonight's{" "}
-                  <a href="http://s2a.ca/shows">show</a>. See you there!
+                  <Link to="/shows">show</Link>. See you there!
                 </div>
               </div>
             </div>
