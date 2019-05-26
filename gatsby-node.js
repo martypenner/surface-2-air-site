@@ -1,66 +1,21 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+"use strict"
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+exports.createPages = ({ actions, graphql }) => {
+  const { createRedirect } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  return graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
-            }
-          }
-        }
-      }
-    `
-  ).then(result => {
-    if (result.errors) {
-      throw result.errors
-    }
+  const redirects = [
+    [`/blog/very-much-alive`, `/blog`],
+    [`/album-cover/133`, `/music`],
+    [`/album-cover/132`, `/music`],
+    [`/album-cover/117`, `/music`],
+  ]
 
-    // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges
-
-    posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
-
-      createPage({
-        path: post.node.fields.slug,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
-      })
+  redirects.forEach(([fromPath, toPath]) =>
+    createRedirect({
+      fromPath,
+      toPath,
+      isPermanent: true,
+      redirectInBrowser: true,
     })
-
-    return null
-  })
-}
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
+  )
 }
