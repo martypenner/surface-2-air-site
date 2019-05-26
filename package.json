@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "surface-2-air-site",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "The official website of Surface 2 Air",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Marty Penner <penner.marty@gmail.com>",
   "dependencies": {
     "gatsby": "^2.7.1",
     "gatsby-image": "^2.1.1",
@@ -30,25 +27,13 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-typography": "^0.16.19",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.54",
-    "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "react-typography": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.17.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "homepage": "https://surface2air.band",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
