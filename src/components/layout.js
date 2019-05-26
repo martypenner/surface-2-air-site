@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
           <ul>
             <li>
               <a
-                href="http://www.facebook.com/group.php?gid=2261736061"
+                href="https://www.facebook.com/surface2airband/"
                 id="facebook"
               />
             </li>
