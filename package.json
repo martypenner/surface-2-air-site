@@ -1,44 +1,41 @@
 {
   "name": "surface-2-air-site",
-  "private": true,
-  "description": "The official website of Surface 2 Air",
   "version": "0.1.0",
-  "author": "Marty Penner <penner.marty@gmail.com>",
+  "description": "The official website of Surface 2 Air",
+  "author": "Marty Penner",
+  "homepage": "https://surface2air.band",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "deploy": "fly deploy --remote-only",
+    "dev": "remix dev",
+    "start": "remix-serve build",
+    "prepare": "husky install"
+  },
   "dependencies": {
-    "gatsby": "^2.7.1",
-    "gatsby-image": "^2.1.1",
-    "gatsby-plugin-google-analytics": "^2.0.20",
-    "gatsby-plugin-manifest": "^3.13.0",
-    "gatsby-plugin-netlify": "^2.0.17",
-    "gatsby-plugin-offline": "^2.1.1",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sharp": "^3.13.0",
-    "gatsby-plugin-typography": "^2.2.13",
-    "gatsby-remark-copy-linked-files": "^2.0.12",
-    "gatsby-remark-images": "^3.0.12",
-    "gatsby-remark-prismjs": "^3.2.9",
-    "gatsby-remark-responsive-iframe": "^2.1.1",
-    "gatsby-remark-smartypants": "^2.0.9",
-    "gatsby-source-filesystem": "^2.0.37",
-    "gatsby-transformer-remark": "^2.3.12",
-    "gatsby-transformer-sharp": "^3.13.0",
-    "prismjs": "^1.27.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-helmet": "^5.2.1",
-    "react-typography": "^0.16.20"
+    "@remix-run/node": "^1.5.1",
+    "@remix-run/react": "^1.5.1",
+    "@remix-run/serve": "^1.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "prettier": "^1.17.1"
+    "@remix-run/dev": "^1.5.1",
+    "@remix-run/eslint-config": "^1.5.1",
+    "@types/react": "^17.0.45",
+    "@types/react-dom": "^17.0.17",
+    "eslint": "^8.15.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
   },
-  "homepage": "https://surface2air.band",
-  "main": "n/a",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  "engines": {
+    "node": ">=14"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx,css,md,json}": "prettier --write"
   }
 }
