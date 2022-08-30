@@ -1,5 +1,4 @@
 name: 🚀 Deploy
-
 on:
   push:
     branches:
@@ -17,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@0.10.0
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -40,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@0.10.0
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -63,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@0.10.0
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -86,7 +85,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@0.10.0
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -104,16 +103,19 @@ jobs:
         with:
           useLockFile: false
 
+      # - name: 🛠 Setup Database
+      #   run: npx prisma migrate reset --force
+
       - name: ⚙️ Build
         run: npm run build
 
       # - name: 🌳 Cypress run
-      #   uses: cypress-io/github-action@v3
+      #   uses: cypress-io/github-action@v4
       #   with:
       #     start: npm run start:mocks
-      #     wait-on: "http://localhost:8811"
+      #     wait-on: 'http://localhost:8811'
       #   env:
-      #     PORT: "8811"
+      #     PORT: '8811'
 
   build:
     name: 🐳 Build
@@ -122,7 +124,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@0.10.0
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -135,11 +137,11 @@ jobs:
           field: 'app'
 
       - name: 🐳 Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v2
 
       # Setup cache
       - name: ⚡️ Cache Docker layers
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-buildx-${{ github.sha }}
@@ -147,14 +149,14 @@ jobs:
             ${{ runner.os }}-buildx-
 
       - name: 🔑 Fly Registry Auth
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           registry: registry.fly.io
           username: x
           password: ${{ secrets.FLY_API_TOKEN }}
 
       - name: 🐳 Docker build
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v3
         with:
           context: .
           push: true
@@ -183,7 +185,7 @@ jobs:
 
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action@0.10.0
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
