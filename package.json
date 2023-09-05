@@ -81,7 +81,7 @@
     "vitest": "^0.22.1"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18 <19"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
