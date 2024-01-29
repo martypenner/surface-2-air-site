@@ -1,7 +1,7 @@
 import { Link } from '@remix-run/react';
 import incomingSrc from '~/images/incoming.jpg';
-import epSrc from '~/images/s2a ep.jpg';
-import victoryForTheDyingSrc from '~/images/victory for the dying.jpg';
+import epSrc from '~/images/s2a-ep.jpg';
+import victoryForTheDyingSrc from '~/images/victory-for-the-dying.jpg';
 
 export default function Music() {
   return (

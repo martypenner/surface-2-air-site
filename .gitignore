@@ -1,4 +1,5 @@
 node_modules
+.eslintcache
 
 /build
 /public/build
@@ -10,3 +11,6 @@ node_modules
 /prisma/data.db-journal
 
 /app/styles/tailwind.css
+
+# sst
+.sst

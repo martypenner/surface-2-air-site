@@ -10,7 +10,8 @@
     "build": "run-s build:*",
     "build:remix": "remix build",
     "dev": "run-p dev:*",
-    "dev:remix": "cross-env NODE_ENV=development binode --require ./mocks -- @remix-run/dev:remix dev",
+    "dev:sst": "sst dev",
+    "dev:remix": "sst bind remix dev",
     "format": "prettier --write .",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve build",
@@ -21,7 +22,8 @@
     "test:e2e:run": "cross-env PORT=8811 start-server-and-test start:mocks http://localhost:8811 \"npx cypress run\"",
     "typecheck": "tsc -b && tsc -b cypress",
     "validate": "run-p \"test -- --run\" lint typecheck test:e2e:run",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "sst deploy --stage prod"
   },
   "eslintIgnore": [
     "/node_modules",
@@ -56,8 +58,10 @@
     "@vitejs/plugin-react": "^4.0.4",
     "@vitest/coverage-c8": "^0.22.1",
     "autoprefixer": "^10.4.15",
+    "aws-cdk-lib": "2.110.1",
     "binode": "^1.0.5",
     "c8": "^8.0.1",
+    "constructs": "10.3.0",
     "cookie": "^0.5.0",
     "cross-env": "^7.0.3",
     "cypress": "^13.1.0",
@@ -72,6 +76,7 @@
     "postcss": "^8.4.31",
     "prettier": "3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
+    "sst": "^2.39.13",
     "start-server-and-test": "^2.0.0",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
