@@ -32,6 +32,7 @@ export default {
             certificate,
           },
         },
+        warm: 1,
       });
 
       stack.addOutputs({
