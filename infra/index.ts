@@ -1,7 +1,7 @@
 import * as cloudflare from '@pulumi/cloudflare';
 import * as github from '@pulumi/github';
 
-// todo: once migrated to cf, cleanup old cnames
+const accountId = '2fdb0acf0b64d82ce66e86c9b8165d05';
 
 const zoneDomainsToIdsMap = {
   'surfacetoair.ca': '14cd97bfef0de624efdc9544eb6721fe',
@@ -61,6 +61,14 @@ new cloudflare.PageRule('redirectWWW - main site', {
   },
 });
 
+new cloudflare.Record('pages cname - main site', {
+  zoneId: mainZoneId,
+  name: 'surfacetoair.band',
+  type: 'CNAME',
+  value: 'surface-to-air-site.pages.dev',
+  proxied: true,
+});
+
 new cloudflare.Record('keybase-verification', {
   zoneId: mainZoneId,
   name: 'surfacetoair.band',
@@ -68,6 +76,32 @@ new cloudflare.Record('keybase-verification', {
   value:
     'keybase-site-verification=Ci2tSpVfVELBVWfKGLD8I5hKk6HeN3Mi8AwxUtpBW34',
   proxied: false,
+});
+
+new cloudflare.PagesProject('pages-deployment', {
+  accountId,
+  name: 'surface-to-air-site',
+  productionBranch: 'main',
+  source: {
+    config: {
+      owner: 'martypenner',
+      deploymentsEnabled: true,
+      prCommentsEnabled: true,
+      previewBranchExcludes: ['main'],
+      previewBranchIncludes: ['dev', 'preview'],
+      previewDeploymentSetting: 'custom',
+      productionBranch: 'main',
+      productionDeploymentEnabled: true,
+      repoName: 'surface-2-air-site',
+    },
+    type: 'github',
+  },
+});
+
+new cloudflare.PagesDomain('pages-site', {
+  accountId,
+  domain: 'surfacetoair.band',
+  projectName: 'surface-to-air-site',
 });
 
 new github.Repository(
