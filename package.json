@@ -6,6 +6,7 @@
   "homepage": "https://surfacetoair.band",
   "private": true,
   "sideEffects": false,
+  "main": "infra/index.ts",
   "scripts": {
     "build": "run-s build:*",
     "build:remix": "remix build",
@@ -23,7 +24,7 @@
     "typecheck": "tsc -b && tsc -b cypress",
     "validate": "run-p \"test -- --run\" lint typecheck test:e2e:run",
     "prepare": "husky install",
-    "deploy": "sst deploy --stage prod"
+    "deploy": "mv tsconfig.json tsconfig.bak && mv infra/tsconfig.json tsconfig.json && pulumi up -s prod; mv tsconfig.json infra/ && mv tsconfig.bak tsconfig.json"
   },
   "eslintIgnore": [
     "/node_modules",
@@ -31,6 +32,9 @@
     "/public/build"
   ],
   "dependencies": {
+    "@pulumi/cloudflare": "^5.19.0",
+    "@pulumi/github": "^5.26.0",
+    "@pulumi/pulumi": "^3.0.0",
     "@remix-run/node": "^1.19.3",
     "@remix-run/react": "^1.19.3",
     "@remix-run/serve": "^1.19.3",

@@ -1,0 +1,7 @@
+name: surface-2-air-site
+runtime: nodejs
+description: The official website of the band Surface 2 Air
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: ''
