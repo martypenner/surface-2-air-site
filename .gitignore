@@ -1,6 +1,14 @@
 node_modules
 .eslintcache
 
+/.cache
+/functions/\[\[path\]\].js
+/functions/\[\[path\]\].js.map
+/functions/metafile.*
+/functions/version.txt
+/public/build
+.dev.vars
+
 /build
 /public/build
 .env

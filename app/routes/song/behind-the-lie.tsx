@@ -1,11 +1,13 @@
-import type { MetaFunction } from '@remix-run/node';
+import type { MetaFunction } from '@remix-run/cloudflare';
+import { metaV1 } from '@remix-run/v1-meta';
 
 const title = 'Behind the Lie';
-export const meta: MetaFunction = () => ({
-  title,
-  'og:title': title,
-  'twitter:title': title,
-});
+export const meta: MetaFunction = (args) =>
+  metaV1(args, {
+    title,
+    'og:title': title,
+    'twitter:title': title,
+  });
 
 export default function BehindTheLie() {
   return (

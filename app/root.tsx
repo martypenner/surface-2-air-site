@@ -1,4 +1,4 @@
-import type { MetaFunction } from '@remix-run/node';
+import type { MetaFunction } from '@remix-run/cloudflare';
 import {
   Link,
   Links,
@@ -8,6 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
+import { metaV1 } from '@remix-run/v1-meta';
 import styles from '~/styles/global.css';
 
 export function links() {
@@ -16,7 +17,7 @@ export function links() {
 
 const description = `The official website of Surface 2 Air, an alternative metal band from Aylmer, Ontario.`;
 
-export const meta: MetaFunction = ({ location }) => {
+export const meta: MetaFunction = ({ location, ...args }) => {
   const pathParts = location.pathname.split('/').filter(Boolean);
   const lastPart = pathParts[pathParts.length - 1];
   const capitalizedTitle = lastPart
@@ -27,19 +28,22 @@ export const meta: MetaFunction = ({ location }) => {
     (capitalizedTitle ? capitalizedTitle + ' | ' : '') +
     'Surface 2 Air Official';
 
-  return {
-    charset: 'utf-8',
-    title,
-    description,
-    viewport: 'width=device-width,initial-scale=1',
-    'og:title': title,
-    'og:description': description,
-    'og:type': 'website',
-    'twitter:card': 'summary',
-    'twitter:creator': 'Marty Penner',
-    'twitter:title': title,
-    'twitter:description': description,
-  };
+  return metaV1(
+    { location, ...args },
+    {
+      charset: 'utf-8',
+      title,
+      description,
+      viewport: 'width=device-width,initial-scale=1',
+      'og:title': title,
+      'og:description': description,
+      'og:type': 'website',
+      'twitter:card': 'summary',
+      'twitter:creator': 'Marty Penner',
+      'twitter:title': title,
+      'twitter:description': description,
+    }
+  );
 };
 
 export function CatchBoundary() {
@@ -111,7 +115,7 @@ export default function App() {
           </div>
 
           <footer id="footer">
-            <p>© {new Date().getFullYear()}</p>
+            <p>© {new Date().getFullYear()} Marty Penner and Surface 2 Air</p>
           </footer>
         </div>
 
